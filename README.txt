@@ -5,7 +5,8 @@ please put codetest_train.txt and codetest_test.txt in the root dir(same as ques
 
 -prediction for test file: myprediction.txt
 
--method summary: use a weighted average of XGBoost Regressor, Random Forest Regressor, Ridge and Lasso
+-method summary: use a weighted average of XGBoost Regressor, Random Forest Regressor, 
+		 Ridge and Lasso
 
 -estimated score(MSE on holdout set): 11.92
 
@@ -42,17 +43,17 @@ model details:
 			- Ridge: 13.88
 			- Lasso: 14.10
 			- Random Forest: 14.44
-			- Ensemble model(0.5*XGBoost + 0.3 * Rdige + 0.1 * Lasso + 0.1 * RandomForest): 11.92
+			- Ensemble model(0.5*XGBoost+0.3*Rdige+0.1*Lasso+0.1*RandomForest): 11.92
 
 	- testing: Scikit-learn Pipeline make sures preprocessing in test set is exactly same as 
-		   in training set. I rebuild the model on whole training set use the best parameters 
-		   chosen by grid search CV
+		   in training set. I rebuild the model on whole training set use the best 
+		   parameters chosen by grid search CV
 
 
-model reusability: my model can also train on other dataset, where the 1st column is the target value and 
-		   the remaining columns are either numeric or categorical features. It will find out 
-		   categorical and numeric features respectively and apply different missing value 
-		   imputation strategy.
+model reusability: my model can also train on other dataset, where the 1st column is the target 
+		   value and the remaining columns are either numeric or categorical features. 
+		   It will find out categorical and numeric features respectively and apply different 
+		   missing value imputation strategy.
 
 --------------------------------------------------------------------------------
 |                       Code Test Part 2: Baby Names!                          |
