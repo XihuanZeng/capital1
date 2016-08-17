@@ -52,8 +52,8 @@ model details:
 
 model reusability: my model can also train on other dataset, where the 1st column is the target 
 		   value and the remaining columns are either numeric or categorical features. 
-		   It will find out categorical and numeric features respectively and apply different 
-		   missing value imputation strategy.
+		   It will find out categorical and numeric features respectively and apply 
+		   different missing value imputation strategy.
 
 --------------------------------------------------------------------------------
 |                       Code Test Part 2: Baby Names!                          |
